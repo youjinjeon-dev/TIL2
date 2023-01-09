@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch04 웹문서에 다양한 내용 입력하기 : 표 만들기</title>
+</head>
+<body>
+    <h2>상품 구성</h2>
+    <table border="1">
+    <caption>선물용과 가정용 상품 구성</caption>
+    <!--특정 열을 묶어서 같은 스타일 속성 지정-->
+    <colgroup>
+        <col style="background-color:pink;">
+        <col>
+        <col span="2" style="width:150px">
+    </colgroup>
+    <!--thead: 제목  tbody: 본문 tfoot: 요약-->
+    <thead>
+    <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>개수</th>
+        <th>가격</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">선물용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>35000원</td>
+    </tr>
+    <tr>
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>52000원</td>
+    </tr>
+    <tr>
+        <td rowspan="2">가정용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>30000원</td>
+    </tr>
+    <tr>
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>47000원</td>
+    </tr>
+    </tbody>
+    </table>
+</body>
+</html>
