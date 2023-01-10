@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch05 입력 양식 작성하기</title>
+</head>
+<body>
+    <!--간단한 로그인 폼-->
+    <form>
+        <fieldset>
+            <label>아이디: <input type="text" id="user_id" size="10"></label>
+            <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+            <input type="hidden" value="사이트를 통한 직접 로그인">
+            <input type="submit" value="로그인">
+            <input type="image" src="../photo/login.png" alt="로그인">
+            <input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+        </fieldset>
+    </form>
+
+    <!--배송정보 입력 폼-->
+    <fieldset>
+        <legend>배송 정보</legend>
+    <ul>
+        <li>
+            <label for="user-name">이름</label>
+            <input type="text" id="user-name">
+        </li>
+        <li>
+            <label for="addr">배송 주소</label>
+            <input type="text" id="addr">
+        </li>
+        <li>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail">
+        </li>
+        <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone">
+        </li>
+    </ul>
+    </fieldset>
+    <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+    </div>
+
+    <!--상품 선택 폼-->
+    <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요</b></p>
+        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+        <input type="number" min="0" max="5">개 (최대 5개)
+        <input type="range" min="0" max="5">개 (최대 5개)
+        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+        <input type="number" min="0" max="3" value="1">개 (최대 3개)
+        <input type="range" min="0" max="3" value="1">개 (최대 3개)
+        <label><input type="checkbox" value="f_3">가정용 3kg</label>
+        <label><input type="checkbox" value="f_5">가정용 5kg</label>
+        <p><b>포장 선택</b></p>
+        <label><input type="radio" name="gift" value="yes">선물 포장</label>
+        <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>    
+    </fieldset>
+
+    <!--날짜 입력-->
+    <h1>날짜 지정하기</h1>
+    <input type="date" min="2020-01-01" max="2020-01-11">
+    <input type="month">
+    <input type="week">
+
+    <!--시간 입력-->
+    <h1>시간 지정하기</h1>
+    <input type="time">
+    <input type="datetime">
+    <input type="datetime-local">
+</body>
+</html>
