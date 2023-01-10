@@ -10,4 +10,5 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
       ex: input type="radio" name="gift" value="yes"<br>
           input type="radio" name="gift" value="no"
   <li>input type=button : 주로 자바스크립트 실행할 때 사용</li>
+  <li>textarea 태그 : 택스트 영역 삽입(cols:글자수, rows:세로줄 수)</li>
   </ul>
