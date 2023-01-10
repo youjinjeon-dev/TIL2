@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch05 입력 양식 작성하기</title>
+</head>
+<body>
+    <!--텍스트를 여러 줄 입력하기-->
+    <label for="memo">메모</label>
+    <textarea id="memo" cols="40" rows="4"></textarea>
+    <!--select, option 태그 : 드롭다운 목록 만들기-->
+    <label for="prod1">상품 선택</label><br>
+    <select id="prod1">
+        <option value="s_3" selected>선물용 3kg</option>
+        <option value="s_5">선물용 5kg</option>
+        <option value="f_3">가정용 3kg</option>
+        <option value="f_5">가정용 5kg</option>
+    </select>
+    <!--데이터 목록-->
+    <label for="prod2">포장 여부</label>
+    <input type="text" id="prod2" list="pack">
+    <datalist id="pack">
+        <option value="package">선물 포장</option>
+        <option value="no_package">포장 안 함</option>
+    </datalist>
+    <!--버튼 태그-->
+    <button type="submit">주문하기</button>
+    <button type="reset">취소하기</button>
+</body>
+</html>
