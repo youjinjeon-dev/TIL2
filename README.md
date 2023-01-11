@@ -13,7 +13,7 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
   <li>textarea 태그 : 택스트 영역 삽입(cols:글자수, rows:세로줄 수)</li>
   </ul>
   <h3>CSS</h3>
-  <h3>JAVASCIPT</h3>
+  <h3>JavaScript</h3>
   <ul>
   <li>script 태그 : 위치, 갯수 상관 없음. 삽입된 위치에서 바로 실행<br>
   되도록이면 /body 태그 직전에 삽입</li>
