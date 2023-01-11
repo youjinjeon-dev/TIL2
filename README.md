@@ -15,5 +15,6 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
   <h3>CSS</h3>
   <h3>JAVASCIPT</h3>
   <ul>
-  <li>script 태그 : 위치, 갯수 상관 없음. 삽입된 위치에서 바로 실행</li>
+  <li>script 태그 : 위치, 갯수 상관 없음. 삽입된 위치에서 바로 실행
+  되도록이면 /body 태그 직전에 삽입</li>
   </ul>
