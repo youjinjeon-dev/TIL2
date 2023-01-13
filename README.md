@@ -19,4 +19,6 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
   되도록이면 /body 태그 직전에 삽입</li>
   <li>스타일 가이드 : https://google.github.io/styleguide/jsguide.html</li>
   <li>문장 끝에 세미콜론 붙이지 않아도 실행되나 반드시 붙이도록 권장</li>
+  <li>문자열 : "", '' 상관 없음<br>
+  큰 따옴표로 묶은 문자열 안에 또 다른 문자열을 넣으려면 중복되지 않도록 작은 따옴표 사용</li>
   </ul>
