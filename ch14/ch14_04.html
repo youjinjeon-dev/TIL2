@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch14 자바스크립트 기본 문법</title>
+</head>
+<body>
+    <script>
+        // if~else 문
+        var userNumber = prompt("숫자를 입력하세요.");
+        if(userNumber !== null) {
+        if(userNumber % 3 === 0) {
+            alert("3의 배수입니다.");
+        } else {
+            alert("3의 배수가 아닙니다.");
+        }
+        }
+        else
+            alert("입력이 취소됐습니다.");
+
+        // 조건 연산자로 조건 체크하기
+        var userNumber2 = prompt("숫자를 입력하세요.");
+        if(userNumber != null)
+        (userNumber % 3 === 0) ? alert("3의 배수입니다") : alert("3의 배수가 아닙니다.");
+        else
+            alert("입력이 취소됐습니다.");
+
+        // OR 연산자를 사용해 조건 체크하기
+        var numberOne = prompt("50 미만인 숫자를 입력하세요.");
+        var numberTwo = prompt("50 미만인 숫자를 입력하세요");
+        if(numberOne < 10 || numberTwo < 10)
+            alert("숫자 2개 중에서 최소한 하나는 10 미만입니다.");
+        else
+            alert("숫자 2개 중에서 10 미만인 수가 없습니다.");
+
+        // AND 연산자를 사용해 조건 체크하기
+        var numOne = prompt("50미만인 숫자를 입력하세요.");
+        var numTwo = prompt("50미만인 숫자를 입력하세요.");
+        if ( numOne < 50 && numTwo < 50)
+            alert("숫자 2개 모두 50 미만이군요.");
+        else
+            alert("조건에 맞지 않습니다.");
+
+        // switch 문으로 조건 체크하기
+        var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+        switch(session) {
+            case "1" :
+                document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.");
+                    break;
+            case "2" :
+                document.write("<p>마케팅 세션은 <strong>203호</strong>에서 진행됩니다.");
+                    break;
+             case "3" :
+                document.write("<p>마케팅 세션은 <strong>205호</strong>에서 진행됩니다.");
+                    break;
+                    default :
+                    alert("잘못 입력했습니다.");
+        }
+    </script>
+</body>
+</html>
