@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		body {
+			font-size:1.2em;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h2>3의 배수 찾기</h2>
+	<script>
+		var n = prompt("몇 까지의 배수를 찾을까요?");
+		var sum = 0;
+		
+		if(n !== null) {
+			for ( i = 1; i <= n; i++) {
+				if(i % 3 === 0) {
+					sum++;
+					document.write(i +",");
+				}
+			}
+			document.write("<br>" + n + "까지의 3의 배수의 개수 : " + sum);
+		} else {
+			document.write("결과값을 표시할 수 없습니다.");
+		}
+	</script>
+</body>
+</html>
