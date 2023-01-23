@@ -57,5 +57,16 @@
         }
         displayNumber();
     </script>
+
+
+    <!--const-->
+    <!--재선언할 수 없는 const 변수-->
+    <script>
+        const currentYear = 2023;
+        console.log(currentYear);
+        //const currentYear; // 재선언 에러
+        currentYear = 2022;
+        //console.log(currentYear); // Uncaught TypeError: Assignment to constant variable.
+    </script>
 </body>
 </html>
