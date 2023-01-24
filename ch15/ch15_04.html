@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch15 함수와 이벤트</title>
+</head>
+<body>
+    <!--매개변수를 사용한 함수 선언하기-->
+    <script>
+        function addNumber(num1, num2) {
+            //var sum = num1 + num2;
+            //return sum;
+            return num1 + num2; // 더한 값을 바로 반환 
+        }
+        var result = addNumber(2, 3);
+        document.write("두 수를 더한 값: " + result + "<br>");
+        console.log(result);
+    </script>
+
+    <!--매개변수의 기본값 지정하기-->
+    <script>
+        function multiple(a, b = 5, c = 10) {
+            return a * b + c ;
+        }
+        var result1 = multiple(5, 10, 20);
+        document.write(result1 + "<br>");
+        var result2 = multiple(5); // a = 5, b = 5, c = 5
+        document.write(result2);
+    </script>
+</body>
+</html>
