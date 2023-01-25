@@ -29,5 +29,21 @@
         var result2 = multiple(5); // a = 5, b = 5, c = 5
         document.write(result2);
     </script>
+
+    <!--1부터 n까지 숫자를 더하는 함수-->
+    <script>
+        function calcSum(n) {
+            var sum = 0; // var = 재할당, 재선언 가능
+
+            for(let i = 1; i < n+1; i++) {
+                sum += i;
+            }
+            document.write("1부터" + n + "까지 더하면 " + sum);
+        }
+        var userNumber = prompt("얼마까지 더할까요?");
+        if(userNumber !== null) {
+            calcSum(parseInt(userNumber));
+        }
+    </script>
 </body>
 </html>
