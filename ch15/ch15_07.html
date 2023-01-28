@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch15 함수와 이벤트</title>
+</head>
+<body>
+
+        <button id="change">글자색 바꾸기</button>
+        <p>button get change</p>
+        
+        <script>
+            //var changeBttn = document.querySelector("#change");
+            //changeBttn.onclick = changeColor;
+            // 작성 방법 2
+            //document.querySelector("#change").onclick = changeColor;
+
+            //function changeColor() {
+            //    document.querySelector("p").style.color = "#f00";
+            //}
+
+            // 직접 함수 선언
+            document.querySelector("#change").onclick = function() {
+                document.querySelector("p").style.color = "#f00";
+            };
+        </script>
+
+</body>
+</html>
