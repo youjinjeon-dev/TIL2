@@ -43,8 +43,9 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
     4. var보다는 let를 사용하기 : 프로그램 합치다 보면 변수가 중복될 가능성이 크기 때문</li>
     <li> math 객체 : 따로 인스턴스 만들지 않음</li>
     <li> window 객체 : window 객체는 기본 객체로 생략 가능<br>
-	(window 메소드 종류 : alert(), close(), open(), prompt() 등)<br>
-    </li>
+	(window 메소드 종류 : alert(), close(), open(), prompt() 등)<br></li>
+	<li> 이벤트 처리기 : <태그 on이벤트명 = "함수명"> <br><br>
+    
   </ul>
   
   <h4>연습문제 풀면서 어려웠던 점</h4>
