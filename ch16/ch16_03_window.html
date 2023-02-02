@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch16 자바스크립트와 객체</title>
+</head>
+<!--이벤트가 발생한 html에 이벤트 처리기를 직접 연결-->
+<body onload="openPopup()">
+	<p>문서를 열면 팝업 창이 표시됩니다</p>
+    
+    <!--팝업이 차단된 웹 브라우저에 팝업 창 표시하기-->
+    <script>
+        var blocked = false;
+        function openPopup() {
+            var newWin = open("notice.html", "pop", "width=500, height=400");
+            if(newWin == null) {
+                alert("팝업이 차단되어 있습니다. 팝업 차단을 해제해 주세요.");
+            }
+            newWin.moveBy(100,100);
+        }
+    </script>
+</body>
+</html>
