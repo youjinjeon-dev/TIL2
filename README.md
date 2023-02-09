@@ -40,11 +40,13 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
     1. 전역변수(적용 범위 제한X, 특정 지역 밖에서 선언된 변수) 사용을 최소화하기 : 어디서든 접근 가능하기 때문에 메모리 차지가 크고, 오류 발생률이 높음<br>
     2. var 변수는 함수 시작 부분에 선언하기 : 호이스팅(변수 선언을 스코프의 가장 위쪽으로 끌어서 실행) 발생하기 때문<br>
     3. for문에서 카운터 변수를 사용할 때는 var 예약어 사용하지 않기 -> 블록 밖에서 선언하거나 let 예약어 사용<br>
-    4. var보다는 let를 사용하기 : 프로그램 합치다 보면 변수가 중복될 가능성이 크기 때문</li>
+    4. var보다는 let를 사용하기 : 프로그램 합치다 보면 변수가 중복될 가능성이 크기 때문</li><br><br>
     <li> math 객체 : 따로 인스턴스 만들지 않음</li>
     <li> window 객체 : window 객체는 기본 객체로 생략 가능<br>
 	(window 메소드 종류 : alert(), close(), open(), prompt() 등)<br></li>
-	<li> 이벤트 처리기 : <태그 on이벤트명 = "함수명"> <br><br>
+	<li> 이벤트 처리기 : <태그 on이벤트명 = "함수명"> </li>
+	<li> 요소명.getElementById("id명") : 특정한 id가 포함된 DOM 요소에 접근 가능</li>
+	<li> 요소명.getElementsByClassName("class명") : class 선택자 이름이 들어 있는 DOM 요소에 접근 가능</li><br><br><br>
     
   </ul>
   
