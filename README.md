@@ -49,7 +49,9 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
 		1. 요소명.getElementById("id명") : 특정한 id가 포함된 DOM 요소에 접근 가능<br>
 	2. 요소명.getElementsByClassName("class명") : class 선택자 이름이 들어 있는 DOM 요소에 접근 가능<br>
 	3. 요소명.getElementsByTagName("태그명(ex:p태그)") : 태그명을 사용한 DOM 요소에 접근 가능<br>
-	4. querySelector(선택자), querySelector(선택자 또는 태그) : 텍스트, 속성 노드까지 자유롭게 제어 가능</li><br><br><br>
+	4. querySelector(선택자), querySelector(선택자 또는 태그) : 텍스트, 속성 노드까지 자유롭게 제어 가능<br>
+	5. getAttribute("속성명") : 속성을 가져옴<br>
+	6. setAttribute("속성명", "값") : 원하는 속성값으로 지정</li><br><br><br>
     
   </ul>
   
