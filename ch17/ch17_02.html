@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch17 문서 객체 모델(DOM)</title>
+</head>
+<body>
+    <button onclick="inntext()">innerText로 표시하기</button>
+    <button onclick="innhtml()">innerHtml로 표시하기</button>
+    <h1>현재 시각: </h1>
+    <div id="current"></div>
+
+    <div id="prod-pic">
+        <img src="../photo/healing.jpg" alt="이미지" id="healing" width="200" height="200" onclick="displaySrc()">
+    </div>
+    <script>
+        var now = new Date();
+
+        function inntext() {
+            document.getElementById("current").innerText = now;
+        }
+        function innhtml() {
+            document.getElementById("current").innerHTML = "<em>" + now + "</em>";
+        }
+
+        function displaySrc() {
+            var healing = document.getElementById("healing");
+            alert("이미지 소스: " + healing.getAttribute("src"));
+
+        }
+    </script>
+</body>
+</html>
