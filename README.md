@@ -45,8 +45,11 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
     <li> window 객체 : window 객체는 기본 객체로 생략 가능<br>
 	(window 메소드 종류 : alert(), close(), open(), prompt() 등)<br></li>
 	<li> 이벤트 처리기 : <태그 on이벤트명 = "함수명"> </li>
-	<li> 요소명.getElementById("id명") : 특정한 id가 포함된 DOM 요소에 접근 가능</li>
-	<li> 요소명.getElementsByClassName("class명") : class 선택자 이름이 들어 있는 DOM 요소에 접근 가능</li><br><br><br>
+	<li> DOM(웹 문서에 접근하고 제어할 수 있도록 객체를 사용하여 웹 문서를 체계적으로 정리) 메서드 <br> 
+		1. 요소명.getElementById("id명") : 특정한 id가 포함된 DOM 요소에 접근 가능<br>
+	2. 요소명.getElementsByClassName("class명") : class 선택자 이름이 들어 있는 DOM 요소에 접근 가능<br>
+	3. 요소명.getElementsByTagName("태그명(ex:p태그)") : 태그명을 사용한 DOM 요소에 접근 가능<br>
+	4. querySelector(선택자), querySelector(선택자 또는 태그) : 텍스트, 속성 노드까지 자유롭게 제어 가능</li><br><br><br>
     
   </ul>
   
