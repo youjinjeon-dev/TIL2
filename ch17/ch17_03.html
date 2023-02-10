@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch17 문서 객체 모델(DOM)</title>
+</head>
+<body>
+    <!--예제 1-->
+    <img src="../photo/cup-1.png" id="cup">
+    <!--예제 2-->
+    <img src="../photo/cup-1.png" id="cup2">
+    <!--예제 3-->
+    <img src="../photo/cup-1.png" id="cup3">
+    <!--예제 4-->
+    <img src="../photo/cup-1.png" id="cup4">
+    <script>
+        // 예제 1
+        var cup = document.querySelector("#cup");
+        cup.onclick = function() {
+            alert("이미지를 클릭했습니다.");
+        }
+        // 예제 2
+        var cup2 = document.querySelector("#cup2");
+        cup2.onclick = changePic;
+        function changePic() {
+            cup2.src = "../photo/cup-2.png";
+        }
+        // 예제 3
+        var cup3 = document.querySelector("#cup3");
+        cup3.onclick = function(event) {
+            alert("이벤트 유형: " + event.type + ", 이벤트 발생 위치: " + event.pageX + "," + event.pageY);
+        }
+        // 예제 4
+        var card = document.querySelector("#cup4");
+        card.onclick = function(event) {
+            alert("클릭한 이미지 파일 : " + this.src);
+        }
+    </script>
+</body>
+</html>
