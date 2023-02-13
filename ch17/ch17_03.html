@@ -15,6 +15,9 @@
     <img src="../photo/cup-1.png" id="cup3">
     <!--예제 4-->
     <img src="../photo/cup-1.png" id="cup4">
+    <!--예제 5-->
+    <img src="../photo/easys-1.jpg" id="cover">
+
     <script>
         // 예제 1
         var cup = document.querySelector("#cup");
@@ -37,6 +40,15 @@
         card.onclick = function(event) {
             alert("클릭한 이미지 파일 : " + this.src);
         }
+        // 예제 5
+        var cover = document.getElementById("cover");
+        cover.addEventListener("mouseover", function() {
+            cover.src = "../photo/easys-2.jpg";
+        });
+        cover.addEventListener("mouseout", function() {
+            cover.src = "../photo/easys-1.jpg";
+        });
+
     </script>
 </body>
 </html>
