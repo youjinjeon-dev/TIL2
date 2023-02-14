@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>라이트박스</title>
+    <link rel="stylesheet" href="../css/lightbox.css">
+  </head>
+  <body>
+    <div class="row">
+      <ul>
+        <li><img src="../photo/tree-1-thumb.jpg" data-src="../photo/tree-1.jpg" class="pic"></li>
+        <li><img src="../photo/tree-2-thumb.jpg" data-src="../photo/tree-2.jpg" class="pic"></li>
+        <li><img src="../photo/tree-3-thumb.jpg" data-src="../photo/tree-3.jpg" class="pic"></li> 
+        <li><img src="../photo/tree-4-thumb.jpg" data-src="../photo/tree-4.jpg" class="pic"></li>
+        <li><img src="../photo/tree-5-thumb.jpg" data-src="../photo/tree-5.jpg" class="pic"></li>
+        <li><img src="../photo/tree-6-thumb.jpg" data-src="../photo/tree-6.jpg" class="pic"></li>          
+      </ul>    
+    </div>
+
+    <div id="lightbox">
+			<img src="../photo/tree-1.jpg" alt="" id="lightboxImage">			
+      <button id="close">닫기</button>
+    </div>
+
+     
+
+    <script>
+    var pics = document.getElementsByClassName("pic");
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImage = document.getElementById("lightboxImage");
+
+
+    for(i = 0; i < pics.length; i++) {
+      pics[i].addEventListener("click", showLightbox);
+     }
+
+    // 섬네일 이미지를 클릭하면 라이트 박스에서 보여주기
+    function showLightbox() {
+      var bigLocation = this.getAttribute("data-src"); // 큰 사진
+      lightboxImage.setAttribute("src", bigLocation); // 작은 사진 -> 큰 사진
+      lightbox.style.display = "block";
+    }
+    // 닫기 버튼 누르면 라이트박스 감추기
+    document.querySelector("#close").onclick = function noneDisplay() {
+      lightbox.style.display = "none"; // lightbox 요소 감춤
+    }
+    </script>
+  </body>
+</html>
