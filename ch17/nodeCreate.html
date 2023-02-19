@@ -29,6 +29,15 @@
 
       subject.value=""; // 다음 입력을 위해 텍스트 비우기
 
+      // 입력한 항목 클릭하여 삭제하기
+      var items = document.querySelectorAll("li"); // 모든 항목 가져오기
+      for(i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function() {
+          if(this.parentNode)
+          this.parentNode.removeChild(this);
+        });
+      }
+
     }
   </script>
 </body>
