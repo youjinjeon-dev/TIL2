@@ -36,9 +36,11 @@
 		var check = document.getElementsByClassName("check");
 
 		for(i = 0; i < check.length; i++) {
-			check[i].addEventListener("click", function() { // 항목을 클릭하면 함수 실행
-				check[i].style.color = "#ccc";
-				check[i].style.textDecoration = "line-through";
+			check[i].addEventListener("click", function() { // 항목을 클릭하면 함수 실행			
+				this.style.color = "#ccc";
+				this.style.textDecoration = "line-through";
+				this.parentNode.style.color = "#ccc";
+				this.parentNode.style.textDecoration = "line-through";
 			});
 		}
 	}
