@@ -35,7 +35,7 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
     <li> const 예약어 특징 <br>
     1. 상수(변하지 않는 값) 변수<br>
     2. 재선언, 재할당 불가<br>
-    3. 블록 레벨의 스코프 가짐</li>
+    3. 블록 레벨의 스코프 가짐</li><br><br>
     <li> 변수 사용 주의사항<br>
     1. 전역변수(적용 범위 제한X, 특정 지역 밖에서 선언된 변수) 사용을 최소화하기 : 어디서든 접근 가능하기 때문에 메모리 차지가 크고, 오류 발생률이 높음<br>
     2. var 변수는 함수 시작 부분에 선언하기 : 호이스팅(변수 선언을 스코프의 가장 위쪽으로 끌어서 실행) 발생하기 때문<br>
@@ -51,7 +51,15 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
 	3. 요소명.getElementsByTagName("태그명(ex:p태그)") : 태그명을 사용한 DOM 요소에 접근 가능<br>
 	4. querySelector(선택자), querySelector(선택자 또는 태그) : 텍스트, 속성 노드까지 자유롭게 제어 가능<br>
 	5. getAttribute("속성명") : 속성을 가져옴<br>
-	6. setAttribute("속성명", "값") : 원하는 속성값으로 지정</li><br><br><br>
+	6. setAttribute("속성명", "값") : 원하는 속성값으로 지정</li><br><br>
+	<li> DOM에서 노드 추가 및 삭제하기 <br>
+	1. 요소 노드 추가 : document.createElement(노드명) <br>
+	2. 텍스트 노드 추가 : document.createTextNode(텍스트) <br>
+	ex) var newP = document.createElement("p"); <br>
+	var txtNode = document.createTextNode("dom은 document object model의 줄임말입니다."); <br>
+	3. 자식 노드 연결 : 부모노드. appendChild(자식노드) <br>
+	ex) newP.appendChild(txtNode); <br>
+	<br><br><br>
     
   </ul>
   
