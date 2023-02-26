@@ -66,7 +66,14 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
 		srcNode.value = "images/dom.jpg"; <br>
 		newImg.setAttributeNode(srcNode); <br>
 	6. 필요한 위치에 노드 연결하기 : ex) document.getElementById("id명").appendChild("자식노드");<br>
-	7. 버튼 태그 사용할 때 주의할 점 : submit 역할 취소하기 위해 return false; 추가<br><br>
+	7. 버튼 태그 사용할 때 주의할 점 : submit 역할 취소하기 위해 return false; 추가</li><br><br>
+	<li> DOM에서 노드 삭제하기<br>
+	1. 부모 노드에서 자식 노드를 삭제해야 함<br>
+	2. 부모 노드 찾는 법 : console에 노드.parentNode 입력 <br>
+	ex) document.querySelectorAll("li")[1].parentNode <br>
+	3. 자식 노드 삭제 : 부모노드. removeChild(자식노드) <br>
+	ex) li.parentNode.removeChild(li)<br><br><br>
+	
   </ul>
   
   <h4>연습문제 풀면서 어려웠던 점</h4>
