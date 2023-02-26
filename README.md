@@ -53,12 +53,17 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
 	5. getAttribute("속성명") : 속성을 가져옴<br>
 	6. setAttribute("속성명", "값") : 원하는 속성값으로 지정</li><br><br>
 	<li> DOM에서 노드 추가 및 삭제하기 <br>
-	1. 요소 노드 추가 : document.createElement(노드명) <br>
+		1. 요소 노드 추가 : document.createElement(노드명) <br>
 	2. 텍스트 노드 추가 : document.createTextNode(텍스트) <br>
 	ex) var newP = document.createElement("p"); <br>
 	var txtNode = document.createTextNode("dom은 document object model의 줄임말입니다."); <br>
 	3. 자식 노드 연결 : 부모노드. appendChild(자식노드) <br>
 	ex) newP.appendChild(txtNode); <br>
+	4. 속성값이 있는 요소 추가 : document.createAttribute(속성명); <br>
+	5. 속성 노드 연결하기 : 요소명.setAttributeNode(속성노드); <br>
+	ex) var srcNode = document.createAttribute("src"); <br>
+		srcNode.value = "images/dom.jpg"; <br>
+		newImg.setAttributeNode(srcNode); <br>
 	<br><br><br>
     
   </ul>
