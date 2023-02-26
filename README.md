@@ -1,5 +1,6 @@
 # TIL2
-Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자바스크립트 웹 표준의 정석)<br><br>
+Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자바스크립트 웹 표준의 정석)<br>
+공부하면서 헷갈리는 개념이나 새로 알게 된 개념 정리<br><br>
 <h3>HTML</h3>
 <ul>
 <li>table tr태그 : 행,  td태그: 행 안의 셀</li>
@@ -52,7 +53,7 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
 	4. querySelector(선택자), querySelector(선택자 또는 태그) : 텍스트, 속성 노드까지 자유롭게 제어 가능<br>
 	5. getAttribute("속성명") : 속성을 가져옴<br>
 	6. setAttribute("속성명", "값") : 원하는 속성값으로 지정</li><br><br>
-	<li> DOM에서 노드 추가 및 삭제하기 <br>
+	<li> DOM에서 노드 추가하기<br>
 		1. 요소 노드 추가 : document.createElement(노드명) <br>
 	2. 텍스트 노드 추가 : document.createTextNode(텍스트) <br>
 	ex) var newP = document.createElement("p"); <br>
@@ -64,8 +65,8 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
 	ex) var srcNode = document.createAttribute("src"); <br>
 		srcNode.value = "images/dom.jpg"; <br>
 		newImg.setAttributeNode(srcNode); <br>
-	<br><br><br>
-    
+	6. 필요한 위치에 노드 연결하기 : ex) document.getElementById("id명").appendChild("자식노드");<br>
+	7. 버튼 태그 사용할 때 주의할 점 : submit 역할 취소하기 위해 return false; 추가<br><br>
   </ul>
   
   <h4>연습문제 풀면서 어려웠던 점</h4>
