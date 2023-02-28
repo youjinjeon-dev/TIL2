@@ -12,10 +12,14 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
           input type="radio" name="gift" value="no"
   <li>input type=button : 주로 자바스크립트 실행할 때 사용</li>
   <li>textarea 태그 : 택스트 영역 삽입(cols:글자수, rows:세로줄 수)</li>
-  </ul>
+  </ul><br><br><br>
   <h3>CSS</h3>
+  <ul>
+  <li> CSS 소스 경량화(minify) : CSS 소스가 길면 주석, 줄 바꿈, 공백 등을 제거하고 필요한 정보만 남김<br>
+  (관련 툴 : css minify, css compress) </li>
+  </ul><br><br><br>
   <h3>JavaScript</h3>
-  <h4>개념 정리</h4>
+
   <ul>
   <li>script 태그 : 위치, 갯수 상관 없음. 삽입된 위치에서 바로 실행<br>
   되도록이면 /body 태그 직전에 삽입</li>
