@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch07 텍스트를 표현하는 다양한 스타일</title>
+    <style>
+        .shadow1 {
+            color: red;
+            text-shadow: 1px 1px black;
+        }
+        .shadow2 {
+            text-shadow: 5px 5px 3px #ffa500;
+        }
+        .shadow3 {
+            color: #fff;
+            text-shadow: 7px -7px 20px #000;
+        }
+        .trans1 {
+            text-transform: capitalize;
+        }
+        .trans2 {
+            text-transform: uppercase;
+        }
+        .trans3 {
+            text-transform: lowercase;
+        }
+
+        .spacing1 {
+            letter-spacing: 0.2em;
+        }
+        .spacing2 {
+            letter-spacing: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="shadow1">HTML</h1>
+    <h1 class="shadow2">CSS</h1>
+    <h1 class="shadow3">Javascript</h1>
+
+    <p class="trans1">html</p>
+    <p class="trans2">css</p>
+    <p class="trans3">JAVASCRIPT</p>
+
+    <p>CSS</p>
+    <p class="spacing1">CSS</p>
+    <p class="spacing2">CSS</p>
+</body>
+</html>
