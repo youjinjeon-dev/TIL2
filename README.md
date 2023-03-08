@@ -50,7 +50,11 @@ Today I Learned 2(Book: 한 권으로 끝내는 웹 기본 교과서 HTM+CSS+자
   3. 쉽게 표현 하는 방법 : [color: 영어 단어(ex:brown)] 작성 후, 색상 이름 위로 마우스 포인터 올리면 색상표가 나타남. <br>한번 더 클릭하면 16진숫값으로 바뀜 <br><br><br>
 
   <li> 레이아웃 구성할 때 요소의 크기를 쉽게 계산하려면 box-sizing 속성을 border-box로 지정</li>
-  
+  <li> border-width 속성 : border-width: <크기> | thin | medium | thick <br>
+  1. 속성 1개 지정 : 4개 방향 테두리 모두 같은 값이 적용 <br>
+  2. 속성 2개 지정 : 첫 번째 값 = top, bottom 값   두 번째 값 = left, right 값 <br>
+  3. 속성 3개 지정 : top-> right-> bottom 값, left는 right 속성값과 똑같이 적용 <br>
+  4. 속성 4개 지정 : top-> right-> bottom-> left 값 </li>
 
   
   
